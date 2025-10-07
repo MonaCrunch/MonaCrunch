@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mona Crunch 🍪</title>
+  <link rel="stylesheet" href="modulo.css" />
+  
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="logo-container">
+      <img src="Logo.png" alt="Logo Cookie" class="logo">
+      <h1>𝕄𝕠𝕟𝕒 ℂ𝕣𝕦𝕟𝕔𝕙 🍪</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-text">
+      <h2>🍪 Dulzura artesanal que derrite corazones</h2>
+      <p>Galletas recién horneadas con amor y sabor inolvidable.</p>
+      <button onclick="mostrarPromo()">🎉 ¡Ver promoción!</button>
+    </div>
+  </section>
+
+  <section id="productos" class="productos">
+    <h2>Nuestras Estrellas 🍬</h2>
+    <p class="subtitulo">Cada galleta está hecha con ingredientes naturales y mucho amor 💖</p>
+
+    <div class="galletas">
+      <div class="card">
+        <img src="" alt="Chocolate" />
+        <h3>Galleta de Chocolate</h3>
+        <p>Deliciosa, crujiente y con trozos de chocolate derretido. ¡Irresistible!</p>
+      </div>
+      <div class="card">
+        <img src="" alt="Vainilla" />
+        <h3>Galleta de Vainilla</h3>
+        <p>Suaves y doradas, con el toque perfecto de dulzura.</p>
+      </div>
+      <div class="card">
+        <img src="" alt="Avena" />
+        <h3>Galleta de Avena</h3>
+        <p>Natural, saludable y con un sabor que te hará sonreír.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>📩 Contáctanos</h2>
+    <p>¿Tienes antojo o quieres hacer un pedido especial? Escríbenos 💌</p>
+    <form action="https://formspree.io/f/xeorlawv"
+        method="POST">
+      <input type="text" placeholder="Tu nombre" id="nombre" name="nombre" required />
+      <input type="email" placeholder="Tu correo electrónico" id="correo" name="correo" required />
+      <textarea placeholder="Tu mensaje..." id="mensaje" name="mensaje" required></textarea>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 <strong>Mona Crunch</strong>. Hecho con 💕 y muchas galletas.</p>
+  </footer>
+
+  <script>
+    function mostrarPromo() {
+      alert("🎊 ¡Los primeros 20 que nos envien un mensaje se llevan una galleta gratis! 😋");
+    }
+  </script>
+</body>
+</html>
